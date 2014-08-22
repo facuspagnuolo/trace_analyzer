@@ -224,7 +224,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="lookup">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Look up for traces in file ..."/>
+            <Property name="text" type="java.lang.String" value="Look up for addresses in file ..."/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lookupActionPerformed"/>

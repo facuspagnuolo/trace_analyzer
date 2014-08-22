@@ -93,7 +93,7 @@ public class Console extends javax.swing.JFrame {
 
         separator.setForeground(new java.awt.Color(204, 204, 255));
 
-        lookup.setText("Look up for traces in file ...");
+        lookup.setText("Look up for addresses in file ...");
         lookup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lookupActionPerformed(evt);
@@ -361,7 +361,7 @@ public class Console extends javax.swing.JFrame {
     private void leftToRightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftToRightActionPerformed
         Object[] traces = foundList.getSelectedValues();
         if(toAnalyzeList.getModel().getSize() + traces.length > resultSheetsQty){
-            JOptionPane.showMessageDialog(null, "You can analyze up to "+ resultSheetsQty +" traces");
+            JOptionPane.showMessageDialog(null, "You can analyze up to "+ resultSheetsQty +" traces.\nYou can extend this limit adding some 'LRUDT' sheets on model.xlsx file");
         }
         else{
             for(Object t:traces){
